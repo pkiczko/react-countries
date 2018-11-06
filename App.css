@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+li:first {
+	margin-top: 4em ;
+}
+
+li {
+	width: 50%;
+	margin: 0.5em auto;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px gray;
+	border: 1px solid white;
+	text-decoration: none;
+	list-style: none;
+	background-image: linear-gradient(to right, transparent, black, transparent);
+}
+li:hover {
+	transform: scale(1,1.2);
+}
+
+
+#tab1, #tab2 {
+		display:none;
+		visibility: hidden;
+		position:absolute;
+		}
+label {
+  display: inline-block;
+  margin: 10px 10px -1px;
+  padding: 10px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+#tab1:before,#tab2:before {display:none;}
+
+#tab1:checked + label {
+  color: black;
+  border-bottom: 1px solid #fff;
+  background-color: white;
+
+}
+#tab2:checked + label {
+  color: black;
+  border-bottom: 1px solid #fff;
+  background-color: white;
+}
+
+
+#tab1:checked,
+#tab2:checked{
+  display: block;
+}
